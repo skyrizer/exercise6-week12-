@@ -3,7 +3,7 @@ package exercise6;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.security.PublicKey;
+
 
 public class rainfallOutput {
 
