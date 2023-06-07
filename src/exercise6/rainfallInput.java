@@ -28,7 +28,6 @@ public class rainfallInput {
 	                {"2223023", "Sg. Duyong", "Melaka Tengah", "37", "0", "0", "3", "0", "43"},
 	                {"2222006", "Cheng (Taman Merdeka)", "Melaka Tengah", "20", "0", "0", "3", "0", "42"}};
 		
-
 		try (
 			
 			//3. create an output stream between this program and the target file
