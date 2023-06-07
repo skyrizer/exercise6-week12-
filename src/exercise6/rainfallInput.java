@@ -11,7 +11,7 @@ import java.io.IOException;
  * @author wafirdzihni
  *
  */
-//test
+
 public class rainfallInput {
 	
 	public static void main(String[] args) {
