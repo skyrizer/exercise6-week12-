@@ -3,6 +3,7 @@ package exercise6;
 import java.io.DataInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.security.PublicKey;
 
 public class rainfallOutput {
 
@@ -10,7 +11,8 @@ public class rainfallOutput {
 		 
 		 try {
 			 
-			 DataInputStream input = new DataInputStream(new FileInputStream("rainfall_input.bin"));
+			 String fileName =  "rainfall_input.bin";
+			 DataInputStream input = new DataInputStream(new FileInputStream(fileName));
 
 			 int stationCount = 0;
 			 int districtCount = 0;
@@ -32,6 +34,7 @@ public class rainfallOutput {
 
 				 // Reading rainfall readings
 				 System.out.println("Rainfall Readings:");
+				 
 				 int stationTotalRainfall = 0;
 				 for (int i = 0; i < 6; i++) {
 					 
@@ -43,8 +46,8 @@ public class rainfallOutput {
 					 System.out.println("Day " + (i + 1) + ": " + data);
 				 }
 
-				 double stationAverageRainfall = stationTotalRainfall / 6.0;
-				 System.out.println("Average Rainfall: " + stationAverageRainfall);
+				 double stationAvgRainfall = stationTotalRainfall / 6.0;
+				 System.out.println("Average Rainfall: " + stationAvgRainfall);
 				 System.out.println();
 				 stationCount++;
 				 districtCount++;
